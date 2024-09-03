@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Astro Dev Server",
+        "type": "shell",
+        "command": "astro dev",
+        "group": "build",
+        "problemMatcher": [],
+        "isBackground": true,
+        "detail": "Start Astro development server"
+      }
+    ]
+  }
+  

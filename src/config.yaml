@@ -1,5 +1,5 @@
 site:
-  name: PET Plastic Recycling Machine
+  name: Elite Machinery
   site: 'https://pet-machine.com'
   base: '/'
   trailingSlash: false
@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: PET Plastic Recycling Machine
-    template: '%s'
+    template: '%s - Elite Machinery'
   description: "PET Plastic Recycling Machine"
   robots:
     index: true
