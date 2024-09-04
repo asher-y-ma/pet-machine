@@ -6,6 +6,7 @@ image: ~/assets/images/e_waste.png
 tags:
   - Recycling
   - Plastic
+  - E-waste
 ---
 ## What Is Electronic Waste?
 E-waste contains various plastics such as PVC, PS, PP, and PC. These are recyclable and can be reintroduced into the production chain.

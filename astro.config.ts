@@ -24,6 +24,8 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
   output: 'static',
 
+  site: 'https://pet-machine.com',
+
   integrations: [
     tailwind({
       applyBaseStyles: false,

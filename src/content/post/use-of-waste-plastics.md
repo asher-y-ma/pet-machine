@@ -2,10 +2,11 @@
 publishDate: 2022-01-09T00:00:00Z
 title: Do you know what use of waste plastics?
 excerpt: Recycling waste plastics is essential for mitigating environmental pollution, especially "white pollution." This article highlights the various ways waste plastics can be repurposed to contribute to a more sustainable future.
-image: ~/assets/images/plastic_recycling_1.jpg
+image: ~/assets/images/plastic_recycling_1.jp
 tags:
   - Recycling
   - Plastic
+  - Waste
 ---
 Plastic is a polymer synthesized by artificial polymers and is a relatively new industrial material. Together with steel, wood, and cement, plastics form the four basic materials of modern industry. It plays an important role in the national economy. Because of its light weight, corrosion resistance, high strength, easy processing, beautiful appearance, bright color, and other properties, and energy saving during production and use, it is widely used in industry, agriculture and people’s daily life.
 
