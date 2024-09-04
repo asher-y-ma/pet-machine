@@ -10,20 +10,24 @@ export const headerData = {
       text: 'Products',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Plastic Crusher',
+          href: getPermalink('/products/crusher'),
+        },
+        {
+          text: 'Label Remover',
+          href: getPermalink('/products/remover'),
         },
         {
           text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          href: getPermalink('/products/startup'),
         },
         {
           text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          href: getPermalink('/products/mobile-app'),
         },
         {
           text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          href: getPermalink('/products/personal'),
         },
       ],
     },
@@ -31,16 +35,12 @@ export const headerData = {
       text: 'Solutions',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'sales',
+          href: getPermalink('/solutions/sales'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Product',
+          href: getPermalink('/solutions/product'),
         },
         {
           text: 'About us',
