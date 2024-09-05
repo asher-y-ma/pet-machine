@@ -2,7 +2,7 @@
 publishDate: 2022-01-09T00:00:00Z
 title: Do you know what use of waste plastics?
 excerpt: Recycling waste plastics is essential for mitigating environmental pollution, especially "white pollution." This article highlights the various ways waste plastics can be repurposed to contribute to a more sustainable future.
-image: ~/assets/images/plastic_recycling_1.jp
+image: ~/assets/images/plastic_recycling_1.jpg
 tags:
   - Recycling
   - Plastic
