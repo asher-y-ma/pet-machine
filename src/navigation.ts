@@ -10,12 +10,24 @@ export const headerData = {
       text: 'Products',
       links: [
         {
-          text: 'Plastic Crusher',
-          href: getPermalink('/products/crusher'),
+          text: 'Bottoles Baler',
+          href: getPermalink('/products/baler'),
+        },
+        {
+          text: 'Bale Opener',
+          href: getPermalink('/products/opener'),
         },
         {
           text: 'Label Remover',
           href: getPermalink('/products/remover'),
+        },
+        {
+          text: 'Plastic Crusher',
+          href: getPermalink('/products/crusher'),
+        },
+        {
+          text: 'Plastic Pelletizer',
+          href: getPermalink('/products/pelletizer'),
         },
       ],
     },

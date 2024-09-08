@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+import { headerData } from '~/navigation';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Debaler Machine',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Login',
+          href: '#',
+        },
+        {
+          variant: 'primary',
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Bale Opener Machine"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Contact Us', href: '/contact' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{
+      src: '~/assets/images/products/opener/chaibaoji1.png',
+      alt: 'Bale Opener Machine',
+    }}
+  >
+    <Fragment slot="title">
+      Bale Opener Machine
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      The Bale Opener Machine breaks apart compacted bales of PET bottles, allowing them to flow freely onto the conveyor belt for further processing.
+    </Fragment>
+  </Hero2>
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Stay informed with AstroWind's blog"
+    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
