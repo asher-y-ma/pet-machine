@@ -29,6 +29,10 @@ export const headerData = {
           text: 'Plastic Pelletizer',
           href: getPermalink('/products/pelletizer'),
         },
+        {
+          text: 'Plastic Sorter',
+          href: getPermalink('/products/sorter'),
+        },
       ],
     },
     {

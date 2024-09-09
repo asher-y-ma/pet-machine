@@ -1,0 +1,182 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { headerData } from '~/navigation';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Sorting Machine',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Login',
+          href: '#',
+        },
+        {
+          variant: 'primary',
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Sorting Machine"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Contact Us', href: '/contact' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{
+      src: '~/assets/images/products/sorter/sorter1.png',
+      alt: 'Sorting Machine',
+    }}
+  >
+    <Fragment slot="title"> Best Sorting Machines </Fragment>
+
+    <Fragment slot="subtitle">
+      Plastic sorting machines, supporting aluminum-plastic sorting, stainless steel sorting, and more.
+    </Fragment>
+  </Hero2>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="Use Cases"
+    subtitle="We offer specialized sorting equipment for different kinds of materials."
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `Electrostatic Plastic Sorter can separate plastics of different materials, including ABS/PS/PVC/PA/PP, etc. It is often used in recycling fields such as waste plastics, household appliance shell crushed materials, automobile crushed materials, toy crushed materials, etc.`,
+      },
+      // {
+      //   title: 'Benefits:',
+      //   description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
+      // },
+    ]}
+    image={{
+      src: '~/assets/images/products/sorter/sorter3.png',
+      alt: 'Sorting Equipment',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Plastic Electrostatic Sorter</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `Plastic Silica Gel Sorter Machine can separate elastic materials such as silicone, rubber, and plastic, with a sorting removal rate of 99%`,
+      },
+      // {
+      //   title: 'Benefits:',
+      //   description: `Serve as a captivating backdrop to showcase your creative work, capturing attention and leaving a lasting impression. <br /> Tailor your portfolio to reflect your unique style and artistic vision. <br /> Prioritizes visuals, allowing you to present your work in high-resolution detail that draws viewers into your creations. <br /> Enables seamless navigation for effortless portfolio exploration.`,
+      // },
+    ]}
+    image={{
+      src: '~/assets/images/products/sorter/sorter4.png',
+      alt: 'Plastic Silica Gel Sorter',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Plastic Silica Gel Sorter</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Description:',
+        description: `Air Separator can remove lint, dust, sponge, paper film, string and other light objects from solid waste materials, solve the problem of light objects blocking the subsequent process, and reduce the work intensity of subsequent equipment.`,
+      },
+      // {
+      //   title: 'Benefits:',
+      //   description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
+      // },
+    ]}
+    image={{
+      src: '~/assets/images/products/sorter/sorter5.png',
+      alt: 'Air Separator',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Air Separator</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description: `The Waste Aluminum Foil Plastic Separator is a highly efficient, cost-effective solution for the recycling of aluminum foil and plastic waste. With the technology developed specifically for separating these two materials, this separator can easily process up to 300 kg of waste per hour.`,
+      },
+      // {
+      //   title: 'Benefits:',
+      //   description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+      // },
+    ]}
+    image={{
+      src: '~/assets/images/products/sorter/sorter2.png',
+      alt: 'Sorting Machine',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Aluminum Plastic Separator</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Stay informed with AstroWind's blog"
+    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
